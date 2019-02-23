@@ -11,8 +11,8 @@ with open('TestResult.txt', 'w') as file:
 def TestData():
 
     #Load Test Data
-    # testLoader = test_localize.loadTestData(r'/import/helium-share/staff/ywang/comp7950/test_images.txt')
-    testLoader = TestDataLoader.loadTestData(r'/import/helium-share/staff/ywang/comp7950/test_images.txt')
+    
+    testLoader = TestDataLoader.loadTestData(r'test_images.txt')
 
     #Load test model
     model = Model_for_testing.loadModel('model.pt')

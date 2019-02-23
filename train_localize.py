@@ -7,8 +7,8 @@ with open('training.txt', 'w') as file:
 
 
 def loadData():
-        DataLoader, TrainingDataLoader = train_loadData.DataLoader(r'/import/helium-share/staff/ywang/comp7950/train_images.txt',
-                                                                   r'/import/helium-share/staff/ywang/comp7950/train_boxes.txt')
+        DataLoader, TrainingDataLoader = train_loadData.DataLoader(r'train_images.txt',
+                                                                   r'train_boxes.txt')
         training.train_model(DataLoader, TrainingDataLoader)
 
 

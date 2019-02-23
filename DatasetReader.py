@@ -21,7 +21,7 @@ class CUBDataset(Dataset):
         for ind in range(len(idFiles)):
 
             imageFileName = idFiles[ind].strip()
-            currentDir = r'/import/helium-share/staff/ywang/comp7950'
+            currentDir = os.path.dirname(__file__)
             imageFileName = os.path.join(currentDir, r'images', imageFileName)
             if is_training:
                 self.images.append((imageFileName, np.array(boundingBoxes[ind].strip().split(split), dtype=np.float32)))
